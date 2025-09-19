@@ -1,0 +1,57 @@
+.edu-exp-section {
+  background: #2f4936; /* fond vert foncé */
+  padding: 2rem;
+  position: relative;
+}
+
+.edu-exp-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* Bloc Éducation */
+.education-card {
+  background: #87A667;
+  padding: 3rem;
+  margin-left: 4rem;
+  border-radius: 0px;
+  /*box-shadow: 0 6px 20px rgba(0,0,0,0.15);*/
+  transition: transform 0.3s ease;
+
+  /* dépassement vers le haut */
+  margin-top: -6rem;   /* tu peux ajuster -2rem, -6rem etc selon le rendu */
+}
+.education-card:hover {
+  transform: translateY(-5px);
+}
+.education-card h2 {
+  color: #5c2d91; /* violet */
+  margin-bottom: 1.5rem;
+}
+.edu-item {
+  margin-bottom: 1.5rem;
+}
+.edu-item h3 {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Bloc Expériences */
+.experience-card {
+  color: white;
+  padding: 1rem;
+}
+.experience-card h2 {
+  color: #c9a3e6;
+  margin-bottom: 1.5rem;
+}
+.exp-item {
+  margin-bottom: 1.5rem;
+}
+.exp-item h3 {
+  font-weight: bold;
+}

@@ -1,0 +1,71 @@
+.hello {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:2rem;
+  background-color: #A3B291;
+  margin-top: 10rem;
+  width: 100%;
+  padding: 3rem 2rem;
+  margin: 4rem 0;
+  color: black;
+  transform: translateY(80px) rotate(1deg);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hello.visible {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:2rem;
+  background-color: #A3B291; /* ou transparent si tu veux rien */
+  padding: 3rem 2rem 7rem; 
+  width: 100%;
+  margin: 0;
+  margin-top: 13rem;
+  color: black;
+  transform: translateY(0) rotate(0deg);
+  opacity: 1;
+}
+
+.hello-content {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.hello-content h1 {
+  margin-bottom: 1rem;
+}
+
+.hello-content p {
+  margin-bottom: 1rem;
+}
+
+.hello-content button{
+  margin-top: 0rem;
+  padding: 1rem 1.5rem;
+  background-color: #5F3A76;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.hello-content button:hover {
+  background-color: #2d5a3d;
+}
+
+.hello-image {
+  flex:1;
+}
+
+.hello-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}

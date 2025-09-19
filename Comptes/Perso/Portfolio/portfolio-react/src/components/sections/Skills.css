@@ -1,0 +1,95 @@
+.skills-section {
+  position: relative;
+  padding: 5rem 2rem 8rem 2rem;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Texte en arrière-plan */
+.skills-background {
+  position: absolute;
+  bottom: 3rem;
+  left: 66%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.08);
+  white-space: nowrap;
+  z-index: 0;
+  text-align: center;
+}
+
+.skills-background p {
+  margin: 0;
+  line-height: 0.9;
+}
+
+.skills-title {
+  font-size: 2rem;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-card {
+  background: #A3B291;
+  border-radius: 19px;
+  padding: 1.5rem;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column; /* IMPORTANT: pour empiler verticalement */
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #222;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Titre de la carte (Frontend, Backend, Outils) */
+.skill-card > p:first-child {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 0.5rem;
+}
+
+/* Style pour tous les autres paragraphes (détails) */
+.skill-card > p:not(:first-child) {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin: 0 0 0.6rem 0;
+  line-height: 1.3;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/* Suppression du style conflictuel */
+/* .skill-card p:not(:first-child) - Ce style est remplacé par .skill-details p */
+
+.skill-label {
+  font-weight: 600;
+  color: #1a3d2f; /* une teinte plus sombre que le texte normal */
+  font-size: 0.9rem;
+  text-transform: uppercase; /* optionnel, pour un côté plus “catégorie” */
+  margin-right: 0.4rem;
+}
